@@ -4092,6 +4092,34 @@
               <OrderBy>Key</OrderBy>
             </Attribute>
           </Attributes>
+          <Hierarchies>
+            <Hierarchy>
+              <ID>Category</ID>
+              <Name>Category</Name>
+              <Levels>
+                <Level>
+                  <ID>Category</ID>
+                  <Name>Category</Name>
+                  <SourceAttributeID>CalculatedColumn1 1</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Subcategory</ID>
+                  <Name>Subcategory</Name>
+                  <SourceAttributeID>CalculatedColumn1</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Model</ID>
+                  <Name>Model</Name>
+                  <SourceAttributeID>ModelName</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Product</ID>
+                  <Name>Product</Name>
+                  <SourceAttributeID>EnglishProductName</SourceAttributeID>
+                </Level>
+              </Levels>
+            </Hierarchy>
+          </Hierarchies>
           <ProactiveCaching>
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
@@ -7601,6 +7629,91 @@
               <OrderBy>Key</OrderBy>
             </Attribute>
           </Attributes>
+          <Hierarchies>
+            <Hierarchy>
+              <ID>Calendar</ID>
+              <Name>Calendar</Name>
+              <Levels>
+                <Level>
+                  <ID>Year</ID>
+                  <Name>Year</Name>
+                  <SourceAttributeID>CalendarYear</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Semester</ID>
+                  <Name>Semester</Name>
+                  <SourceAttributeID>CalendarSemester</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Quarter</ID>
+                  <Name>Quarter</Name>
+                  <SourceAttributeID>CalendarQuarter</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Month</ID>
+                  <Name>Month</Name>
+                  <SourceAttributeID>CalculatedColumn1</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Day</ID>
+                  <Name>Day</Name>
+                  <SourceAttributeID>DayNumberOfMonth</SourceAttributeID>
+                </Level>
+              </Levels>
+            </Hierarchy>
+            <Hierarchy>
+              <ID>Fiscal Calendar</ID>
+              <Name>Fiscal Calendar</Name>
+              <Levels>
+                <Level>
+                  <ID>Year</ID>
+                  <Name>Year</Name>
+                  <SourceAttributeID>FiscalYear</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Semester</ID>
+                  <Name>Semester</Name>
+                  <SourceAttributeID>FiscalSemester</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Quarter</ID>
+                  <Name>Quarter</Name>
+                  <SourceAttributeID>FiscalQuarter</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Month</ID>
+                  <Name>Month</Name>
+                  <SourceAttributeID>CalculatedColumn1</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Day</ID>
+                  <Name>Day</Name>
+                  <SourceAttributeID>DayNumberOfMonth</SourceAttributeID>
+                </Level>
+              </Levels>
+            </Hierarchy>
+            <Hierarchy>
+              <ID>Production Calendar</ID>
+              <Name>Production Calendar</Name>
+              <Levels>
+                <Level>
+                  <ID>Year</ID>
+                  <Name>Year</Name>
+                  <SourceAttributeID>CalendarYear</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Week</ID>
+                  <Name>Week</Name>
+                  <SourceAttributeID>WeekNumberOfYear</SourceAttributeID>
+                </Level>
+                <Level>
+                  <ID>Day</ID>
+                  <Name>Day</Name>
+                  <SourceAttributeID>DayNumberOfWeek</SourceAttributeID>
+                </Level>
+              </Levels>
+            </Hierarchy>
+          </Hierarchies>
           <ProactiveCaching>
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
@@ -7837,6 +7950,11 @@
                   <AttributeID>CalculatedColumn1 1</AttributeID>
                 </Attribute>
               </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Category</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
             </Dimension>
             <Dimension>
               <ID>Product Category_b9723bff-45e8-460d-ae58-2dd4e9a89850</ID>
@@ -8022,6 +8140,17 @@
                   <AttributeID>CalculatedColumn1 1</AttributeID>
                 </Attribute>
               </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Calendar</HierarchyID>
+                </Hierarchy>
+                <Hierarchy>
+                  <HierarchyID>Fiscal Calendar</HierarchyID>
+                </Hierarchy>
+                <Hierarchy>
+                  <HierarchyID>Production Calendar</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
             </Dimension>
           </Dimensions>
           <Perspectives>
