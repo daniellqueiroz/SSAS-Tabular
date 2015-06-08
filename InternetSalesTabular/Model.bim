@@ -2024,6 +2024,7 @@
           <Source xsi:type="DataSourceViewBinding">
             <DataSourceViewID>Sandbox</DataSourceViewID>
           </Source>
+          <Type>Time</Type>
           <UnknownMember valuens="ddl200_200">AutomaticNull</UnknownMember>
           <ErrorConfiguration>
             <KeyNotFound>IgnoreError</KeyNotFound>
@@ -2038,7 +2039,6 @@
               <ID>RowNumber</ID>
               <Name>RowNumber</Name>
               <Type valuens="ddl200_200">RowNumber</Type>
-              <Usage>Key</Usage>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Error</NullProcessing>
@@ -2118,11 +2118,6 @@
                   <AttributeID>FiscalSemester</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
                   <Name>Fiscal Semester</Name>
-                </AttributeRelationship>
-                <AttributeRelationship>
-                  <AttributeID>FullDateAlternateKey</AttributeID>
-                  <OverrideBehavior>None</OverrideBehavior>
-                  <Name>Date</Name>
                 </AttributeRelationship>
               </AttributeRelationships>
               <OrderBy>Key</OrderBy>
@@ -2586,9 +2581,10 @@
             <Attribute>
               <ID>FullDateAlternateKey</ID>
               <Name>Date</Name>
+              <Usage>Key</Usage>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Preserve</NullProcessing>
+                  <NullProcessing>Error</NullProcessing>
                   <DataType>Date</DataType>
                   <DataSize>-1</DataSize>
                   <Source xsi:type="ColumnBinding">
@@ -2606,6 +2602,14 @@
                   <ColumnID>FullDateAlternateKey</ColumnID>
                 </Source>
               </NameColumn>
+              <AttributeRelationships>
+                <AttributeRelationship>
+                  <AttributeID>RowNumber</AttributeID>
+                  <Cardinality>One</Cardinality>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>RowNumber</Name>
+                </AttributeRelationship>
+              </AttributeRelationships>
               <OrderBy>Key</OrderBy>
             </Attribute>
           </Attributes>
