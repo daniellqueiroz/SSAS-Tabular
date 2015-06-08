@@ -14909,6 +14909,60 @@ CREATE MEASURE 'Internet Sales'[Internet Previous Quarter Sales Proportion to QT
                     </Annotation>
                   </Annotations>
                 </Command>
+                <Command>
+                  <Text>----------------------------------------------------------
+-- PowerPivot measures command (do not modify manually) --
+----------------------------------------------------------
+
+
+CREATE MEASURE 'Internet Sales'[Internet Current Quarter Sales Performance]=IFERROR([Internet Current Quarter Sales]/[Internet Previous Quarter Sales Proportion to QTD], BLANK());
+CREATE MEASURE 'Internet Sales'[_Internet Current Quarter Sales Performance Goal] = 1.1; 
+CREATE MEASURE 'Internet Sales'[_Internet Current Quarter Sales Performance Status] = if(ISBLANK('Internet Sales'[Internet Current Quarter Sales Performance]),BLANK(),
+        If('Internet Sales'[Internet Current Quarter Sales Performance]&lt;1,-1,
+	    If('Internet Sales'[Internet Current Quarter Sales Performance]&lt;1.07,0,1)
+    )
+)
+; 
+CREATE KPI CURRENTCUBE.[Internet Current Quarter Sales Performance] AS Measures.[Internet Current Quarter Sales Performance], ASSOCIATED_MEASURE_GROUP = 'Internet Sales', GOAL = Measures.[_Internet Current Quarter Sales Performance Goal], STATUS = Measures.[_Internet Current Quarter Sales Performance Status], STATUS_GRAPHIC = 'Shapes';
+</Text>
+                  <Annotations>
+                    <Annotation>
+                      <Name>FullName</Name>
+                      <Value>Internet Current Quarter Sales Performance</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>Table</Name>
+                      <Value>Internet Sales</Value>
+                    </Annotation>
+                  </Annotations>
+                </Command>
+                <Command>
+                  <Text>----------------------------------------------------------
+-- PowerPivot measures command (do not modify manually) --
+----------------------------------------------------------
+
+
+CREATE MEASURE 'Internet Sales'[nternet Current Quarter Margin Performance]=IF([Internet Previous Quarter Margin Proportion to QTD] &lt;&gt; 0, ([Internet Curent Quarter Margin] - [Internet Previous Quarter Margin Proportion to QTD])/[Internet Previous Quarter Margin Proportion to QTD], BLANK());
+CREATE MEASURE 'Internet Sales'[_nternet Current Quarter Margin Performance Goal] = 1.25; 
+CREATE MEASURE 'Internet Sales'[_nternet Current Quarter Margin Performance Status] = if(ISBLANK('Internet Sales'[nternet Current Quarter Margin Performance]),BLANK(),
+        If('Internet Sales'[nternet Current Quarter Margin Performance]&lt;0.8,-1,
+	    If('Internet Sales'[nternet Current Quarter Margin Performance]&lt;1.03,0,1)
+    )
+)
+; 
+CREATE KPI CURRENTCUBE.[nternet Current Quarter Margin Performance] AS Measures.[nternet Current Quarter Margin Performance], ASSOCIATED_MEASURE_GROUP = 'Internet Sales', GOAL = Measures.[_nternet Current Quarter Margin Performance Goal], STATUS = Measures.[_nternet Current Quarter Margin Performance Status], STATUS_GRAPHIC = 'Shapes';
+</Text>
+                  <Annotations>
+                    <Annotation>
+                      <Name>FullName</Name>
+                      <Value>nternet Current Quarter Margin Performance</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>Table</Name>
+                      <Value>Internet Sales</Value>
+                    </Annotation>
+                  </Annotations>
+                </Command>
               </Commands>
               <CalculationProperties>
                 <CalculationProperty>
@@ -15275,6 +15329,248 @@ CREATE MEASURE 'Internet Sales'[Internet Previous Quarter Sales Proportion to QT
                   <CalculationReference>[Internet Previous Quarter Sales Proportion to QTD]</CalculationReference>
                   <CalculationType>Member</CalculationType>
                   <FormatString>''</FormatString>
+                </CalculationProperty>
+                <CalculationProperty>
+                  <Annotations>
+                    <Annotation>
+                      <Name>Type</Name>
+                      <Value>Kpi</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>IsPrivate</Name>
+                      <Value>False</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>Format</Name>
+                      <Value>
+                        <Format Format="General" xmlns="" />
+                      </Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>GoalType</Name>
+                      <Value>StaticValue</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>GoalValue</Name>
+                      <Value>1.1</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>KpiStatusType</Name>
+                      <Value>Linear</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>KpiThresholdType</Name>
+                      <Value>Absolute</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>KpiThresholdOrdering</Name>
+                      <Value>Ascending</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>KpiThresholdCount</Name>
+                      <Value>2</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>KpiThreshold_0</Name>
+                      <Value>1</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>KpiThreshold_1</Name>
+                      <Value>1.07</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>ValueDescription</Name>
+                    </Annotation>
+                    <Annotation>
+                      <Name>GoalDescription</Name>
+                    </Annotation>
+                    <Annotation>
+                      <Name>StatusDescription</Name>
+                    </Annotation>
+                    <Annotation>
+                      <Name>TrendDescription</Name>
+                    </Annotation>
+                  </Annotations>
+                  <CalculationReference>[Internet Current Quarter Sales Performance]</CalculationReference>
+                  <CalculationType>Member</CalculationType>
+                  <FormatString>''</FormatString>
+                </CalculationProperty>
+                <CalculationProperty>
+                  <Annotations>
+                    <Annotation>
+                      <Name>Type</Name>
+                      <Value>SupportMdx</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>MainObjectType</Name>
+                      <Value>Measure</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>MainObjectName</Name>
+                      <Value>Internet Current Quarter Sales Performance</Value>
+                    </Annotation>
+                  </Annotations>
+                  <CalculationReference>[_Internet Current Quarter Sales Performance Goal]</CalculationReference>
+                  <CalculationType>Member</CalculationType>
+                  <Visible>false</Visible>
+                </CalculationProperty>
+                <CalculationProperty>
+                  <Annotations>
+                    <Annotation>
+                      <Name>Type</Name>
+                      <Value>SupportMdx</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>MainObjectType</Name>
+                      <Value>Measure</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>MainObjectName</Name>
+                      <Value>Internet Current Quarter Sales Performance</Value>
+                    </Annotation>
+                  </Annotations>
+                  <CalculationReference>[_Internet Current Quarter Sales Performance Status]</CalculationReference>
+                  <CalculationType>Member</CalculationType>
+                  <Visible>false</Visible>
+                </CalculationProperty>
+                <CalculationProperty>
+                  <Annotations>
+                    <Annotation>
+                      <Name>Type</Name>
+                      <Value>SupportKpi</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>MainObjectType</Name>
+                      <Value>Measure</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>MainObjectName</Name>
+                      <Value>Internet Current Quarter Sales Performance</Value>
+                    </Annotation>
+                  </Annotations>
+                  <CalculationReference>KPIs.[Internet Current Quarter Sales Performance]</CalculationReference>
+                  <CalculationType>Member</CalculationType>
+                </CalculationProperty>
+                <CalculationProperty>
+                  <Annotations>
+                    <Annotation>
+                      <Name>Type</Name>
+                      <Value>Kpi</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>IsPrivate</Name>
+                      <Value>False</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>Format</Name>
+                      <Value>
+                        <Format Format="General" xmlns="" />
+                      </Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>GoalType</Name>
+                      <Value>StaticValue</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>GoalValue</Name>
+                      <Value>1.25</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>KpiStatusType</Name>
+                      <Value>Linear</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>KpiThresholdType</Name>
+                      <Value>Absolute</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>KpiThresholdOrdering</Name>
+                      <Value>Ascending</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>KpiThresholdCount</Name>
+                      <Value>2</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>KpiThreshold_0</Name>
+                      <Value>0.8</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>KpiThreshold_1</Name>
+                      <Value>1.03</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>ValueDescription</Name>
+                    </Annotation>
+                    <Annotation>
+                      <Name>GoalDescription</Name>
+                    </Annotation>
+                    <Annotation>
+                      <Name>StatusDescription</Name>
+                    </Annotation>
+                    <Annotation>
+                      <Name>TrendDescription</Name>
+                    </Annotation>
+                  </Annotations>
+                  <CalculationReference>[nternet Current Quarter Margin Performance]</CalculationReference>
+                  <CalculationType>Member</CalculationType>
+                  <FormatString>''</FormatString>
+                </CalculationProperty>
+                <CalculationProperty>
+                  <Annotations>
+                    <Annotation>
+                      <Name>Type</Name>
+                      <Value>SupportMdx</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>MainObjectType</Name>
+                      <Value>Measure</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>MainObjectName</Name>
+                      <Value>nternet Current Quarter Margin Performance</Value>
+                    </Annotation>
+                  </Annotations>
+                  <CalculationReference>[_nternet Current Quarter Margin Performance Goal]</CalculationReference>
+                  <CalculationType>Member</CalculationType>
+                  <Visible>false</Visible>
+                </CalculationProperty>
+                <CalculationProperty>
+                  <Annotations>
+                    <Annotation>
+                      <Name>Type</Name>
+                      <Value>SupportMdx</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>MainObjectType</Name>
+                      <Value>Measure</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>MainObjectName</Name>
+                      <Value>nternet Current Quarter Margin Performance</Value>
+                    </Annotation>
+                  </Annotations>
+                  <CalculationReference>[_nternet Current Quarter Margin Performance Status]</CalculationReference>
+                  <CalculationType>Member</CalculationType>
+                  <Visible>false</Visible>
+                </CalculationProperty>
+                <CalculationProperty>
+                  <Annotations>
+                    <Annotation>
+                      <Name>Type</Name>
+                      <Value>SupportKpi</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>MainObjectType</Name>
+                      <Value>Measure</Value>
+                    </Annotation>
+                    <Annotation>
+                      <Name>MainObjectName</Name>
+                      <Value>nternet Current Quarter Margin Performance</Value>
+                    </Annotation>
+                  </Annotations>
+                  <CalculationReference>KPIs.[nternet Current Quarter Margin Performance]</CalculationReference>
+                  <CalculationType>Member</CalculationType>
                 </CalculationProperty>
                 <CalculationProperty>
                   <CalculationReference>Measures.[__No measures defined]</CalculationReference>
