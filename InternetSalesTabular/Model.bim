@@ -593,17 +593,17 @@
                   <AttributeID>CustomerKey</AttributeID>
                   <Cardinality>One</Cardinality>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>CustomerKey</Name>
+                  <Name>Customer Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>GeographyKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>GeographyKey</Name>
+                  <Name>Geography Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>CustomerAlternateKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>CustomerAlternateKey</Name>
+                  <Name>Customer Alternate Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>Title</AttributeID>
@@ -613,32 +613,32 @@
                 <AttributeRelationship>
                   <AttributeID>FirstName</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>FirstName</Name>
+                  <Name>First Name</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>MiddleName</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>MiddleName</Name>
+                  <Name>Middle Name</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>LastName</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>LastName</Name>
+                  <Name>Last Name</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>NameStyle</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>NameStyle</Name>
+                  <Name>Name Style</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>BirthDate</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>BirthDate</Name>
+                  <Name>Birth Date</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>MaritalStatus</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>MaritalStatus</Name>
+                  <Name>Marital Status</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>Suffix</AttributeID>
@@ -653,67 +653,67 @@
                 <AttributeRelationship>
                   <AttributeID>EmailAddress</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>EmailAddress</Name>
+                  <Name>Email Address</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>YearlyIncome</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>YearlyIncome</Name>
+                  <Name>Yearly Income</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>TotalChildren</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>TotalChildren</Name>
+                  <Name>Total Children</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>NumberChildrenAtHome</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>NumberChildrenAtHome</Name>
+                  <Name>Number of Children At Home</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>EnglishEducation</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>EnglishEducation</Name>
+                  <Name>Education</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>EnglishOccupation</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>EnglishOccupation</Name>
+                  <Name>Occupation</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>HouseOwnerFlag</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>HouseOwnerFlag</Name>
+                  <Name>Owns House</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>NumberCarsOwned</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>NumberCarsOwned</Name>
+                  <Name>Number of Cars Owned</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>AddressLine1</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>AddressLine1</Name>
+                  <Name>Address Line 1</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>AddressLine2</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>AddressLine2</Name>
+                  <Name>Address Line 2</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>Phone</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>Phone</Name>
+                  <Name>Phone Number</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>DateFirstPurchase</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>DateFirstPurchase</Name>
+                  <Name>Date of First Purchase</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>CommuteDistance</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>CommuteDistance</Name>
+                  <Name>Commute Distance</Name>
                 </AttributeRelationship>
               </AttributeRelationships>
               <OrderBy>Key</OrderBy>
@@ -729,7 +729,7 @@
                 </Annotation>
               </Annotations>
               <ID>CustomerKey</ID>
-              <Name>CustomerKey</Name>
+              <Name>Customer Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Error</NullProcessing>
@@ -764,7 +764,7 @@
                 </Annotation>
               </Annotations>
               <ID>GeographyKey</ID>
-              <Name>GeographyKey</Name>
+              <Name>Geography Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -799,7 +799,7 @@
                 </Annotation>
               </Annotations>
               <ID>CustomerAlternateKey</ID>
-              <Name>CustomerAlternateKey</Name>
+              <Name>Customer Alternate Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -869,7 +869,7 @@
                 </Annotation>
               </Annotations>
               <ID>FirstName</ID>
-              <Name>FirstName</Name>
+              <Name>First Name</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -904,7 +904,7 @@
                 </Annotation>
               </Annotations>
               <ID>MiddleName</ID>
-              <Name>MiddleName</Name>
+              <Name>Middle Name</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -939,7 +939,7 @@
                 </Annotation>
               </Annotations>
               <ID>LastName</ID>
-              <Name>LastName</Name>
+              <Name>Last Name</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -974,7 +974,7 @@
                 </Annotation>
               </Annotations>
               <ID>NameStyle</ID>
-              <Name>NameStyle</Name>
+              <Name>Name Style</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1010,7 +1010,7 @@
                 </Annotation>
               </Annotations>
               <ID>BirthDate</ID>
-              <Name>BirthDate</Name>
+              <Name>Birth Date</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1046,7 +1046,7 @@
                 </Annotation>
               </Annotations>
               <ID>MaritalStatus</ID>
-              <Name>MaritalStatus</Name>
+              <Name>Marital Status</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1151,7 +1151,7 @@
                 </Annotation>
               </Annotations>
               <ID>EmailAddress</ID>
-              <Name>EmailAddress</Name>
+              <Name>Email Address</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1188,7 +1188,7 @@
                 </Annotation>
               </Annotations>
               <ID>YearlyIncome</ID>
-              <Name>YearlyIncome</Name>
+              <Name>Yearly Income</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1224,7 +1224,7 @@
                 </Annotation>
               </Annotations>
               <ID>TotalChildren</ID>
-              <Name>TotalChildren</Name>
+              <Name>Total Children</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1259,7 +1259,7 @@
                 </Annotation>
               </Annotations>
               <ID>NumberChildrenAtHome</ID>
-              <Name>NumberChildrenAtHome</Name>
+              <Name>Number of Children At Home</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1294,7 +1294,7 @@
                 </Annotation>
               </Annotations>
               <ID>EnglishEducation</ID>
-              <Name>EnglishEducation</Name>
+              <Name>Education</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1329,7 +1329,7 @@
                 </Annotation>
               </Annotations>
               <ID>EnglishOccupation</ID>
-              <Name>EnglishOccupation</Name>
+              <Name>Occupation</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1364,7 +1364,7 @@
                 </Annotation>
               </Annotations>
               <ID>HouseOwnerFlag</ID>
-              <Name>HouseOwnerFlag</Name>
+              <Name>Owns House</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1399,7 +1399,7 @@
                 </Annotation>
               </Annotations>
               <ID>NumberCarsOwned</ID>
-              <Name>NumberCarsOwned</Name>
+              <Name>Number of Cars Owned</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1434,7 +1434,7 @@
                 </Annotation>
               </Annotations>
               <ID>AddressLine1</ID>
-              <Name>AddressLine1</Name>
+              <Name>Address Line 1</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1469,7 +1469,7 @@
                 </Annotation>
               </Annotations>
               <ID>AddressLine2</ID>
-              <Name>AddressLine2</Name>
+              <Name>Address Line 2</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1504,7 +1504,7 @@
                 </Annotation>
               </Annotations>
               <ID>Phone</ID>
-              <Name>Phone</Name>
+              <Name>Phone Number</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1539,7 +1539,7 @@
                 </Annotation>
               </Annotations>
               <ID>DateFirstPurchase</ID>
-              <Name>DateFirstPurchase</Name>
+              <Name>Date of First Purchase</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1575,7 +1575,7 @@
                 </Annotation>
               </Annotations>
               <ID>CommuteDistance</ID>
-              <Name>CommuteDistance</Name>
+              <Name>Commute Distance</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -1638,13 +1638,6 @@
           <ID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</ID>
           <Name>Date</Name>
           <Annotations>
-            <Annotation>
-              <Name>IsQueryEditorUsed</Name>
-              <Value>False</Value>
-            </Annotation>
-            <Annotation>
-              <Name>QueryEditorSerialization</Name>
-            </Annotation>
             <Annotation>
               <Name>TableWidgetSerialization</Name>
               <Value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;Gemini xmlns="TableWidgetSerialization"&gt;&lt;AnnotationContent&gt;&lt;![CDATA[&lt;?xml version="1.0"?&gt;
@@ -2010,7 +2003,7 @@
         &lt;string&gt;FullDateAlternateKey&lt;/string&gt;
       &lt;/key&gt;
       &lt;value&gt;
-        &lt;boolean&gt;false&lt;/boolean&gt;
+        &lt;boolean&gt;true&lt;/boolean&gt;
       &lt;/value&gt;
     &lt;/item&gt;
   &lt;/ColumnChecked&gt;
@@ -2021,10 +2014,11 @@
 &lt;/TableWidgetGridSerialization&gt;]]&gt;&lt;/AnnotationContent&gt;&lt;/Gemini&gt;</Value>
             </Annotation>
             <Annotation>
-              <Name>DataMarketWebBaseUrl</Name>
+              <Name>QueryEditorSerialization</Name>
             </Annotation>
             <Annotation>
-              <Name>DataMarketWebQueryUrl</Name>
+              <Name>IsQueryEditorUsed</Name>
+              <Value>False</Value>
             </Annotation>
           </Annotations>
           <Source xsi:type="DataSourceViewBinding">
@@ -2063,67 +2057,72 @@
                 <AttributeRelationship>
                   <AttributeID>DayNumberOfWeek</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>DayNumberOfWeek</Name>
+                  <Name>Day Number of Week</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>EnglishDayNameOfWeek</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>EnglishDayNameOfWeek</Name>
+                  <Name>Day Name</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>DayNumberOfMonth</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>DayNumberOfMonth</Name>
+                  <Name>Day of Month</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>DayNumberOfYear</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>DayNumberOfYear</Name>
+                  <Name>Day of Year</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>WeekNumberOfYear</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>WeekNumberOfYear</Name>
+                  <Name>Week Number of Year</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>EnglishMonthName</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>EnglishMonthName</Name>
+                  <Name>Month Name</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>MonthNumberOfYear</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>MonthNumberOfYear</Name>
+                  <Name>Month</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>CalendarQuarter</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>CalendarQuarter</Name>
+                  <Name>Calendar Quarter</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>CalendarYear</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>CalendarYear</Name>
+                  <Name>Calendar Year</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>CalendarSemester</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>CalendarSemester</Name>
+                  <Name>Calendar Semester</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>FiscalQuarter</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>FiscalQuarter</Name>
+                  <Name>Fiscal Quarter</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>FiscalYear</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>FiscalYear</Name>
+                  <Name>Fiscal Year</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>FiscalSemester</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>FiscalSemester</Name>
+                  <Name>Fiscal Semester</Name>
+                </AttributeRelationship>
+                <AttributeRelationship>
+                  <AttributeID>FullDateAlternateKey</AttributeID>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>Date</Name>
                 </AttributeRelationship>
               </AttributeRelationships>
               <OrderBy>Key</OrderBy>
@@ -2139,7 +2138,7 @@
                 </Annotation>
               </Annotations>
               <ID>DayNumberOfWeek</ID>
-              <Name>DayNumberOfWeek</Name>
+              <Name>Day Number of Week</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2174,7 +2173,7 @@
                 </Annotation>
               </Annotations>
               <ID>EnglishDayNameOfWeek</ID>
-              <Name>EnglishDayNameOfWeek</Name>
+              <Name>Day Name</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2209,7 +2208,7 @@
                 </Annotation>
               </Annotations>
               <ID>DayNumberOfMonth</ID>
-              <Name>DayNumberOfMonth</Name>
+              <Name>Day of Month</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2244,7 +2243,7 @@
                 </Annotation>
               </Annotations>
               <ID>DayNumberOfYear</ID>
-              <Name>DayNumberOfYear</Name>
+              <Name>Day of Year</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2279,7 +2278,7 @@
                 </Annotation>
               </Annotations>
               <ID>WeekNumberOfYear</ID>
-              <Name>WeekNumberOfYear</Name>
+              <Name>Week Number of Year</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2314,7 +2313,7 @@
                 </Annotation>
               </Annotations>
               <ID>EnglishMonthName</ID>
-              <Name>EnglishMonthName</Name>
+              <Name>Month Name</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2349,7 +2348,7 @@
                 </Annotation>
               </Annotations>
               <ID>MonthNumberOfYear</ID>
-              <Name>MonthNumberOfYear</Name>
+              <Name>Month</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2384,7 +2383,7 @@
                 </Annotation>
               </Annotations>
               <ID>CalendarQuarter</ID>
-              <Name>CalendarQuarter</Name>
+              <Name>Calendar Quarter</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2419,7 +2418,7 @@
                 </Annotation>
               </Annotations>
               <ID>CalendarYear</ID>
-              <Name>CalendarYear</Name>
+              <Name>Calendar Year</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2454,7 +2453,7 @@
                 </Annotation>
               </Annotations>
               <ID>CalendarSemester</ID>
-              <Name>CalendarSemester</Name>
+              <Name>Calendar Semester</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2489,7 +2488,7 @@
                 </Annotation>
               </Annotations>
               <ID>FiscalQuarter</ID>
-              <Name>FiscalQuarter</Name>
+              <Name>Fiscal Quarter</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2524,7 +2523,7 @@
                 </Annotation>
               </Annotations>
               <ID>FiscalYear</ID>
-              <Name>FiscalYear</Name>
+              <Name>Fiscal Year</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2559,7 +2558,7 @@
                 </Annotation>
               </Annotations>
               <ID>FiscalSemester</ID>
-              <Name>FiscalSemester</Name>
+              <Name>Fiscal Semester</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -2580,6 +2579,31 @@
                 <Source xsi:type="ColumnBinding">
                   <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
                   <ColumnID>FiscalSemester</ColumnID>
+                </Source>
+              </NameColumn>
+              <OrderBy>Key</OrderBy>
+            </Attribute>
+            <Attribute>
+              <ID>FullDateAlternateKey</ID>
+              <Name>Date</Name>
+              <KeyColumns>
+                <KeyColumn>
+                  <NullProcessing>Preserve</NullProcessing>
+                  <DataType>Date</DataType>
+                  <DataSize>-1</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                    <ColumnID>FullDateAlternateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <NullProcessing>ZeroOrBlank</NullProcessing>
+                <DataType>WChar</DataType>
+                <DataSize>-1</DataSize>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                  <ColumnID>FullDateAlternateKey</ColumnID>
                 </Source>
               </NameColumn>
               <OrderBy>Key</OrderBy>
@@ -2871,7 +2895,7 @@
                   <AttributeID>GeographyKey</AttributeID>
                   <Cardinality>One</Cardinality>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>GeographyKey</Name>
+                  <Name>Geography Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>City</AttributeID>
@@ -2881,32 +2905,32 @@
                 <AttributeRelationship>
                   <AttributeID>StateProvinceCode</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>StateProvinceCode</Name>
+                  <Name>State Province Code</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>StateProvinceName</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>StateProvinceName</Name>
+                  <Name>State Province Name</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>CountryRegionCode</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>CountryRegionCode</Name>
+                  <Name>Country Region Code</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>EnglishCountryRegionName</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>EnglishCountryRegionName</Name>
+                  <Name>Country Region Name</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>PostalCode</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>PostalCode</Name>
+                  <Name>Postal Code</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>SalesTerritoryKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>SalesTerritoryKey</Name>
+                  <Name>Sales Territory Id</Name>
                 </AttributeRelationship>
               </AttributeRelationships>
               <OrderBy>Key</OrderBy>
@@ -2922,7 +2946,7 @@
                 </Annotation>
               </Annotations>
               <ID>GeographyKey</ID>
-              <Name>GeographyKey</Name>
+              <Name>Geography Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Error</NullProcessing>
@@ -2992,7 +3016,7 @@
                 </Annotation>
               </Annotations>
               <ID>StateProvinceCode</ID>
-              <Name>StateProvinceCode</Name>
+              <Name>State Province Code</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -3027,7 +3051,7 @@
                 </Annotation>
               </Annotations>
               <ID>StateProvinceName</ID>
-              <Name>StateProvinceName</Name>
+              <Name>State Province Name</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -3062,7 +3086,7 @@
                 </Annotation>
               </Annotations>
               <ID>CountryRegionCode</ID>
-              <Name>CountryRegionCode</Name>
+              <Name>Country Region Code</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -3097,7 +3121,7 @@
                 </Annotation>
               </Annotations>
               <ID>EnglishCountryRegionName</ID>
-              <Name>EnglishCountryRegionName</Name>
+              <Name>Country Region Name</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -3132,7 +3156,7 @@
                 </Annotation>
               </Annotations>
               <ID>PostalCode</ID>
-              <Name>PostalCode</Name>
+              <Name>Postal Code</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -3167,7 +3191,7 @@
                 </Annotation>
               </Annotations>
               <ID>SalesTerritoryKey</ID>
-              <Name>SalesTerritoryKey</Name>
+              <Name>Sales Territory Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -3935,42 +3959,42 @@
                   <AttributeID>ProductKey</AttributeID>
                   <Cardinality>One</Cardinality>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ProductKey</Name>
+                  <Name>Product Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>ProductAlternateKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ProductAlternateKey</Name>
+                  <Name>Product Alternate Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>ProductSubcategoryKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ProductSubcategoryKey</Name>
+                  <Name>Product Subcategory Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>WeightUnitMeasureCode</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>WeightUnitMeasureCode</Name>
+                  <Name>Weight Unit Code</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>SizeUnitMeasureCode</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>SizeUnitMeasureCode</Name>
+                  <Name>Size Unit Code</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>EnglishProductName</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>EnglishProductName</Name>
+                  <Name>Product Name</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>StandardCost</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>StandardCost</Name>
+                  <Name>Standard Cost</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>FinishedGoodsFlag</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>FinishedGoodsFlag</Name>
+                  <Name>Is Finished Product</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>Color</AttributeID>
@@ -3980,17 +4004,17 @@
                 <AttributeRelationship>
                   <AttributeID>SafetyStockLevel</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>SafetyStockLevel</Name>
+                  <Name>Safety Stock Level</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>ReorderPoint</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ReorderPoint</Name>
+                  <Name>Reorder Point</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>ListPrice</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ListPrice</Name>
+                  <Name>List Price</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>Size</AttributeID>
@@ -4000,7 +4024,7 @@
                 <AttributeRelationship>
                   <AttributeID>SizeRange</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>SizeRange</Name>
+                  <Name>Size Range</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>Weight</AttributeID>
@@ -4010,17 +4034,17 @@
                 <AttributeRelationship>
                   <AttributeID>DaysToManufacture</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>DaysToManufacture</Name>
+                  <Name>Days to Manufacture</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>ProductLine</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ProductLine</Name>
+                  <Name>Product Line</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>DealerPrice</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>DealerPrice</Name>
+                  <Name>Dealer Price</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>Class</AttributeID>
@@ -4035,32 +4059,32 @@
                 <AttributeRelationship>
                   <AttributeID>ModelName</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ModelName</Name>
+                  <Name>Model Name</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>LargePhoto</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>LargePhoto</Name>
+                  <Name>Large Photo</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>EnglishDescription</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>EnglishDescription</Name>
+                  <Name>Description</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>StartDate</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>StartDate</Name>
+                  <Name>Product Start Date</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>EndDate</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>EndDate</Name>
+                  <Name>Product End Date</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>Status</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>Status</Name>
+                  <Name>Product Status</Name>
                 </AttributeRelationship>
               </AttributeRelationships>
               <OrderBy>Key</OrderBy>
@@ -4076,7 +4100,7 @@
                 </Annotation>
               </Annotations>
               <ID>ProductKey</ID>
-              <Name>ProductKey</Name>
+              <Name>Product Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Error</NullProcessing>
@@ -4111,7 +4135,7 @@
                 </Annotation>
               </Annotations>
               <ID>ProductAlternateKey</ID>
-              <Name>ProductAlternateKey</Name>
+              <Name>Product Alternate Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4146,7 +4170,7 @@
                 </Annotation>
               </Annotations>
               <ID>ProductSubcategoryKey</ID>
-              <Name>ProductSubcategoryKey</Name>
+              <Name>Product Subcategory Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4181,7 +4205,7 @@
                 </Annotation>
               </Annotations>
               <ID>WeightUnitMeasureCode</ID>
-              <Name>WeightUnitMeasureCode</Name>
+              <Name>Weight Unit Code</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4216,7 +4240,7 @@
                 </Annotation>
               </Annotations>
               <ID>SizeUnitMeasureCode</ID>
-              <Name>SizeUnitMeasureCode</Name>
+              <Name>Size Unit Code</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4251,7 +4275,7 @@
                 </Annotation>
               </Annotations>
               <ID>EnglishProductName</ID>
-              <Name>EnglishProductName</Name>
+              <Name>Product Name</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4288,7 +4312,7 @@
                 </Annotation>
               </Annotations>
               <ID>StandardCost</ID>
-              <Name>StandardCost</Name>
+              <Name>Standard Cost</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4324,7 +4348,7 @@
                 </Annotation>
               </Annotations>
               <ID>FinishedGoodsFlag</ID>
-              <Name>FinishedGoodsFlag</Name>
+              <Name>Is Finished Product</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4395,7 +4419,7 @@
                 </Annotation>
               </Annotations>
               <ID>SafetyStockLevel</ID>
-              <Name>SafetyStockLevel</Name>
+              <Name>Safety Stock Level</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4430,7 +4454,7 @@
                 </Annotation>
               </Annotations>
               <ID>ReorderPoint</ID>
-              <Name>ReorderPoint</Name>
+              <Name>Reorder Point</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4467,7 +4491,7 @@
                 </Annotation>
               </Annotations>
               <ID>ListPrice</ID>
-              <Name>ListPrice</Name>
+              <Name>List Price</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4538,7 +4562,7 @@
                 </Annotation>
               </Annotations>
               <ID>SizeRange</ID>
-              <Name>SizeRange</Name>
+              <Name>Size Range</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4608,7 +4632,7 @@
                 </Annotation>
               </Annotations>
               <ID>DaysToManufacture</ID>
-              <Name>DaysToManufacture</Name>
+              <Name>Days to Manufacture</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4643,7 +4667,7 @@
                 </Annotation>
               </Annotations>
               <ID>ProductLine</ID>
-              <Name>ProductLine</Name>
+              <Name>Product Line</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4680,7 +4704,7 @@
                 </Annotation>
               </Annotations>
               <ID>DealerPrice</ID>
-              <Name>DealerPrice</Name>
+              <Name>Dealer Price</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4786,7 +4810,7 @@
                 </Annotation>
               </Annotations>
               <ID>ModelName</ID>
-              <Name>ModelName</Name>
+              <Name>Model Name</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4821,7 +4845,7 @@
                 </Annotation>
               </Annotations>
               <ID>LargePhoto</ID>
-              <Name>LargePhoto</Name>
+              <Name>Large Photo</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4854,7 +4878,7 @@
                 </Annotation>
               </Annotations>
               <ID>EnglishDescription</ID>
-              <Name>EnglishDescription</Name>
+              <Name>Description</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4889,7 +4913,7 @@
                 </Annotation>
               </Annotations>
               <ID>StartDate</ID>
-              <Name>StartDate</Name>
+              <Name>Product Start Date</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4925,7 +4949,7 @@
                 </Annotation>
               </Annotations>
               <ID>EndDate</ID>
-              <Name>EndDate</Name>
+              <Name>Product End Date</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -4961,7 +4985,7 @@
                 </Annotation>
               </Annotations>
               <ID>Status</ID>
-              <Name>Status</Name>
+              <Name>Product Status</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -5194,17 +5218,17 @@
                   <AttributeID>ProductCategoryKey</AttributeID>
                   <Cardinality>One</Cardinality>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ProductCategoryKey</Name>
+                  <Name>Product Category Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>ProductCategoryAlternateKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ProductCategoryAlternateKey</Name>
+                  <Name>Product Category Alternate Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>EnglishProductCategoryName</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>EnglishProductCategoryName</Name>
+                  <Name>Product Category Name</Name>
                 </AttributeRelationship>
               </AttributeRelationships>
               <OrderBy>Key</OrderBy>
@@ -5220,7 +5244,7 @@
                 </Annotation>
               </Annotations>
               <ID>ProductCategoryKey</ID>
-              <Name>ProductCategoryKey</Name>
+              <Name>Product Category Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Error</NullProcessing>
@@ -5255,7 +5279,7 @@
                 </Annotation>
               </Annotations>
               <ID>ProductCategoryAlternateKey</ID>
-              <Name>ProductCategoryAlternateKey</Name>
+              <Name>Product Category Alternate Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -5290,7 +5314,7 @@
                 </Annotation>
               </Annotations>
               <ID>EnglishProductCategoryName</ID>
-              <Name>EnglishProductCategoryName</Name>
+              <Name>Product Category Name</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -5514,22 +5538,22 @@
                   <AttributeID>ProductSubcategoryKey</AttributeID>
                   <Cardinality>One</Cardinality>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ProductSubcategoryKey</Name>
+                  <Name>Product Subcategory Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>ProductSubcategoryAlternateKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ProductSubcategoryAlternateKey</Name>
+                  <Name>Product Subcategory Alternate Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>EnglishProductSubcategoryName</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>EnglishProductSubcategoryName</Name>
+                  <Name>Product Subcategory Name</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>ProductCategoryKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ProductCategoryKey</Name>
+                  <Name>Product Category Id</Name>
                 </AttributeRelationship>
               </AttributeRelationships>
               <OrderBy>Key</OrderBy>
@@ -5545,7 +5569,7 @@
                 </Annotation>
               </Annotations>
               <ID>ProductSubcategoryKey</ID>
-              <Name>ProductSubcategoryKey</Name>
+              <Name>Product Subcategory Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Error</NullProcessing>
@@ -5580,7 +5604,7 @@
                 </Annotation>
               </Annotations>
               <ID>ProductSubcategoryAlternateKey</ID>
-              <Name>ProductSubcategoryAlternateKey</Name>
+              <Name>Product Subcategory Alternate Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -5615,7 +5639,7 @@
                 </Annotation>
               </Annotations>
               <ID>EnglishProductSubcategoryName</ID>
-              <Name>EnglishProductSubcategoryName</Name>
+              <Name>Product Subcategory Name</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -5650,7 +5674,7 @@
                 </Annotation>
               </Annotations>
               <ID>ProductCategoryKey</ID>
-              <Name>ProductCategoryKey</Name>
+              <Name>Product Category Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6226,87 +6250,87 @@
                 <AttributeRelationship>
                   <AttributeID>ProductKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ProductKey</Name>
+                  <Name>Product Category Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>CustomerKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>CustomerKey</Name>
+                  <Name>Customer Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>PromotionKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>PromotionKey</Name>
+                  <Name>Promotion Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>CurrencyKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>CurrencyKey</Name>
+                  <Name>Currency Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>SalesTerritoryKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>SalesTerritoryKey</Name>
+                  <Name>Sales Territory Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>SalesOrderNumber</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>SalesOrderNumber</Name>
+                  <Name>Sales Order Number</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>SalesOrderLineNumber</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>SalesOrderLineNumber</Name>
+                  <Name>Sales Order Line Number</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>RevisionNumber</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>RevisionNumber</Name>
+                  <Name>Revision Number</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>OrderQuantity</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>OrderQuantity</Name>
+                  <Name>Order Quantity</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>UnitPrice</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>UnitPrice</Name>
+                  <Name>Unit Price</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>ExtendedAmount</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ExtendedAmount</Name>
+                  <Name>Extended Amount</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>UnitPriceDiscountPct</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>UnitPriceDiscountPct</Name>
+                  <Name>Unit Price Discount Pct</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>DiscountAmount</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>DiscountAmount</Name>
+                  <Name>Discount Amount</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>ProductStandardCost</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ProductStandardCost</Name>
+                  <Name>Product Standard Cost</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>TotalProductCost</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>TotalProductCost</Name>
+                  <Name>Total Product Cost</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>SalesAmount</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>SalesAmount</Name>
+                  <Name>Sales Amount</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>TaxAmt</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>TaxAmt</Name>
+                  <Name>Tax Amt</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>Freight</AttributeID>
@@ -6316,27 +6340,27 @@
                 <AttributeRelationship>
                   <AttributeID>CarrierTrackingNumber</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>CarrierTrackingNumber</Name>
+                  <Name>Carrier Tracking Number</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>CustomerPONumber</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>CustomerPONumber</Name>
+                  <Name>Customer PO Number</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>OrderDate</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>OrderDate</Name>
+                  <Name>Order Date</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>DueDate</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>DueDate</Name>
+                  <Name>Due Date</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>ShipDate</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>ShipDate</Name>
+                  <Name>Ship Date</Name>
                 </AttributeRelationship>
               </AttributeRelationships>
               <OrderBy>Key</OrderBy>
@@ -6352,7 +6376,7 @@
                 </Annotation>
               </Annotations>
               <ID>ProductKey</ID>
-              <Name>ProductKey</Name>
+              <Name>Product Category Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6387,7 +6411,7 @@
                 </Annotation>
               </Annotations>
               <ID>CustomerKey</ID>
-              <Name>CustomerKey</Name>
+              <Name>Customer Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6422,7 +6446,7 @@
                 </Annotation>
               </Annotations>
               <ID>PromotionKey</ID>
-              <Name>PromotionKey</Name>
+              <Name>Promotion Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6457,7 +6481,7 @@
                 </Annotation>
               </Annotations>
               <ID>CurrencyKey</ID>
-              <Name>CurrencyKey</Name>
+              <Name>Currency Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6492,7 +6516,7 @@
                 </Annotation>
               </Annotations>
               <ID>SalesTerritoryKey</ID>
-              <Name>SalesTerritoryKey</Name>
+              <Name>Sales Territory Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6527,7 +6551,7 @@
                 </Annotation>
               </Annotations>
               <ID>SalesOrderNumber</ID>
-              <Name>SalesOrderNumber</Name>
+              <Name>Sales Order Number</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6562,7 +6586,7 @@
                 </Annotation>
               </Annotations>
               <ID>SalesOrderLineNumber</ID>
-              <Name>SalesOrderLineNumber</Name>
+              <Name>Sales Order Line Number</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6597,7 +6621,7 @@
                 </Annotation>
               </Annotations>
               <ID>RevisionNumber</ID>
-              <Name>RevisionNumber</Name>
+              <Name>Revision Number</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6632,7 +6656,7 @@
                 </Annotation>
               </Annotations>
               <ID>OrderQuantity</ID>
-              <Name>OrderQuantity</Name>
+              <Name>Order Quantity</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6669,7 +6693,7 @@
                 </Annotation>
               </Annotations>
               <ID>UnitPrice</ID>
-              <Name>UnitPrice</Name>
+              <Name>Unit Price</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6707,7 +6731,7 @@
                 </Annotation>
               </Annotations>
               <ID>ExtendedAmount</ID>
-              <Name>ExtendedAmount</Name>
+              <Name>Extended Amount</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6743,7 +6767,7 @@
                 </Annotation>
               </Annotations>
               <ID>UnitPriceDiscountPct</ID>
-              <Name>UnitPriceDiscountPct</Name>
+              <Name>Unit Price Discount Pct</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6778,7 +6802,7 @@
                 </Annotation>
               </Annotations>
               <ID>DiscountAmount</ID>
-              <Name>DiscountAmount</Name>
+              <Name>Discount Amount</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6815,7 +6839,7 @@
                 </Annotation>
               </Annotations>
               <ID>ProductStandardCost</ID>
-              <Name>ProductStandardCost</Name>
+              <Name>Product Standard Cost</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6853,7 +6877,7 @@
                 </Annotation>
               </Annotations>
               <ID>TotalProductCost</ID>
-              <Name>TotalProductCost</Name>
+              <Name>Total Product Cost</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6891,7 +6915,7 @@
                 </Annotation>
               </Annotations>
               <ID>SalesAmount</ID>
-              <Name>SalesAmount</Name>
+              <Name>Sales Amount</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -6929,7 +6953,7 @@
                 </Annotation>
               </Annotations>
               <ID>TaxAmt</ID>
-              <Name>TaxAmt</Name>
+              <Name>Tax Amt</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -7003,7 +7027,7 @@
                 </Annotation>
               </Annotations>
               <ID>CarrierTrackingNumber</ID>
-              <Name>CarrierTrackingNumber</Name>
+              <Name>Carrier Tracking Number</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -7038,7 +7062,7 @@
                 </Annotation>
               </Annotations>
               <ID>CustomerPONumber</ID>
-              <Name>CustomerPONumber</Name>
+              <Name>Customer PO Number</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -7073,7 +7097,7 @@
                 </Annotation>
               </Annotations>
               <ID>OrderDate</ID>
-              <Name>OrderDate</Name>
+              <Name>Order Date</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -7109,7 +7133,7 @@
                 </Annotation>
               </Annotations>
               <ID>DueDate</ID>
-              <Name>DueDate</Name>
+              <Name>Due Date</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -7145,7 +7169,7 @@
                 </Annotation>
               </Annotations>
               <ID>ShipDate</ID>
-              <Name>ShipDate</Name>
+              <Name>Ship Date</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -7374,6 +7398,9 @@
                 </Attribute>
                 <Attribute>
                   <AttributeID>FiscalSemester</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FullDateAlternateKey</AttributeID>
                 </Attribute>
               </Attributes>
             </Dimension>
@@ -8987,6 +9014,20 @@
                         </KeyColumn>
                       </KeyColumns>
                     </Attribute>
+                    <Attribute>
+                      <AttributeID>FullDateAlternateKey</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>Date</DataType>
+                          <DataSize>-1</DataSize>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>FullDateAlternateKey</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
                   </Attributes>
                   <ddl200_200:ShareDimensionStorage>Shared</ddl200_200:ShareDimensionStorage>
                 </Dimension>
@@ -8996,13 +9037,6 @@
                   <ID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</ID>
                   <Name>Date</Name>
                   <Annotations>
-                    <Annotation>
-                      <Name>IsQueryEditorUsed</Name>
-                      <Value>False</Value>
-                    </Annotation>
-                    <Annotation>
-                      <Name>QueryEditorSerialization</Name>
-                    </Annotation>
                     <Annotation>
                       <Name>TableWidgetSerialization</Name>
                       <Value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;Gemini xmlns="TableWidgetSerialization"&gt;&lt;AnnotationContent&gt;&lt;![CDATA[&lt;?xml version="1.0"?&gt;
@@ -9368,7 +9402,7 @@
         &lt;string&gt;FullDateAlternateKey&lt;/string&gt;
       &lt;/key&gt;
       &lt;value&gt;
-        &lt;boolean&gt;false&lt;/boolean&gt;
+        &lt;boolean&gt;true&lt;/boolean&gt;
       &lt;/value&gt;
     &lt;/item&gt;
   &lt;/ColumnChecked&gt;
@@ -9378,10 +9412,20 @@
   &lt;IsSortDescending&gt;false&lt;/IsSortDescending&gt;
 &lt;/TableWidgetGridSerialization&gt;]]&gt;&lt;/AnnotationContent&gt;&lt;/Gemini&gt;</Value>
                     </Annotation>
+                    <Annotation>
+                      <Name>TableWidgetSourceTable</Name>
+                    </Annotation>
+                    <Annotation>
+                      <Name>QueryEditorSerialization</Name>
+                    </Annotation>
+                    <Annotation>
+                      <Name>IsQueryEditorUsed</Name>
+                      <Value>False</Value>
+                    </Annotation>
                   </Annotations>
                   <Source xsi:type="QueryBinding">
                     <DataSourceID>1950b42e-088f-4de4-9345-c9b2b04bd328</DataSourceID>
-                    <QueryDefinition>SELECT [dbo].[DimDate].[DayNumberOfWeek],[dbo].[DimDate].[EnglishDayNameOfWeek],[dbo].[DimDate].[DayNumberOfMonth],[dbo].[DimDate].[DayNumberOfYear],[dbo].[DimDate].[WeekNumberOfYear],[dbo].[DimDate].[EnglishMonthName],[dbo].[DimDate].[MonthNumberOfYear],[dbo].[DimDate].[CalendarQuarter],[dbo].[DimDate].[CalendarYear],[dbo].[DimDate].[CalendarSemester],[dbo].[DimDate].[FiscalQuarter],[dbo].[DimDate].[FiscalYear],[dbo].[DimDate].[FiscalSemester] 		FROM [dbo].[DimDate]</QueryDefinition>
+                    <QueryDefinition>SELECT [dbo].[DimDate].[FullDateAlternateKey],[dbo].[DimDate].[DayNumberOfWeek],[dbo].[DimDate].[EnglishDayNameOfWeek],[dbo].[DimDate].[DayNumberOfMonth],[dbo].[DimDate].[DayNumberOfYear],[dbo].[DimDate].[WeekNumberOfYear],[dbo].[DimDate].[EnglishMonthName],[dbo].[DimDate].[MonthNumberOfYear],[dbo].[DimDate].[CalendarQuarter],[dbo].[DimDate].[CalendarYear],[dbo].[DimDate].[CalendarSemester],[dbo].[DimDate].[FiscalQuarter],[dbo].[DimDate].[FiscalYear],[dbo].[DimDate].[FiscalSemester] 		FROM [dbo].[DimDate]</QueryDefinition>
                   </Source>
                   <StorageMode valuens="ddl200_200">InMemory</StorageMode>
                   <ProcessingMode>Regular</ProcessingMode>
@@ -13906,7 +13950,7 @@ ALTER CUBE CURRENTCUBE UPDATE DIMENSION Measures, Default_Member = [__No measure
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element name="Date_1aa56267-b10f-4ca0-8d13-ee177c9893af" msdata:Locale="" msprop:IsLogical="True" msprop:FriendlyName="Date" msprop:DbSchemaName="dbo" msprop:DbTableName="DimDate" msprop:TableType="View" msprop:Description="Date" msprop:QueryDefinition="      SELECT [dbo].[DimDate].[DayNumberOfWeek],[dbo].[DimDate].[EnglishDayNameOfWeek],[dbo].[DimDate].[DayNumberOfMonth],[dbo].[DimDate].[DayNumberOfYear],[dbo].[DimDate].[WeekNumberOfYear],[dbo].[DimDate].[EnglishMonthName],[dbo].[DimDate].[MonthNumberOfYear],[dbo].[DimDate].[CalendarQuarter],[dbo].[DimDate].[CalendarYear],[dbo].[DimDate].[CalendarSemester],[dbo].[DimDate].[FiscalQuarter],[dbo].[DimDate].[FiscalYear],[dbo].[DimDate].[FiscalSemester]   FROM [dbo].[DimDate] ">
+                    <xs:element name="Date_1aa56267-b10f-4ca0-8d13-ee177c9893af" msdata:Locale="" msprop:IsLogical="True" msprop:FriendlyName="Date" msprop:DbSchemaName="dbo" msprop:DbTableName="DimDate" msprop:TableType="View" msprop:Description="Date" msprop:QueryDefinition="      SELECT [dbo].[DimDate].[FullDateAlternateKey],[dbo].[DimDate].[DayNumberOfWeek],[dbo].[DimDate].[EnglishDayNameOfWeek],[dbo].[DimDate].[DayNumberOfMonth],[dbo].[DimDate].[DayNumberOfYear],[dbo].[DimDate].[WeekNumberOfYear],[dbo].[DimDate].[EnglishMonthName],[dbo].[DimDate].[MonthNumberOfYear],[dbo].[DimDate].[CalendarQuarter],[dbo].[DimDate].[CalendarYear],[dbo].[DimDate].[CalendarSemester],[dbo].[DimDate].[FiscalQuarter],[dbo].[DimDate].[FiscalYear],[dbo].[DimDate].[FiscalSemester]   FROM [dbo].[DimDate] ">
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element name="DayNumberOfWeek" msprop:DbColumnName="DayNumberOfWeek" msprop:FriendlyName="DayNumberOfWeek" type="xs:long" minOccurs="0" />
@@ -13934,6 +13978,7 @@ ALTER CUBE CURRENTCUBE UPDATE DIMENSION Measures, Default_Member = [__No measure
                           <xs:element name="FiscalQuarter" msprop:DbColumnName="FiscalQuarter" msprop:FriendlyName="FiscalQuarter" type="xs:long" minOccurs="0" />
                           <xs:element name="FiscalYear" msprop:DbColumnName="FiscalYear" msprop:FriendlyName="FiscalYear" type="xs:long" minOccurs="0" />
                           <xs:element name="FiscalSemester" msprop:DbColumnName="FiscalSemester" msprop:FriendlyName="FiscalSemester" type="xs:long" minOccurs="0" />
+                          <xs:element name="FullDateAlternateKey" msprop:DbColumnName="FullDateAlternateKey" msprop:FriendlyName="FullDateAlternateKey" type="xs:dateTime" minOccurs="0" />
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
