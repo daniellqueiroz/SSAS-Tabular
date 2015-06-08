@@ -3103,6 +3103,16 @@
                   <OverrideBehavior>None</OverrideBehavior>
                   <Name>Product Status</Name>
                 </AttributeRelationship>
+                <AttributeRelationship>
+                  <AttributeID>CalculatedColumn1</AttributeID>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>Product Subcategory Name</Name>
+                </AttributeRelationship>
+                <AttributeRelationship>
+                  <AttributeID>CalculatedColumn1 1</AttributeID>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>Product Category Name</Name>
+                </AttributeRelationship>
               </AttributeRelationships>
               <OrderBy>Key</OrderBy>
               <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
@@ -4023,6 +4033,60 @@
                 <Source xsi:type="ColumnBinding">
                   <TableID>Product_1197a9ca-99b5-4a2e-957e-d8b2b2414a69</TableID>
                   <ColumnID>Status</ColumnID>
+                </Source>
+              </NameColumn>
+              <OrderBy>Key</OrderBy>
+            </Attribute>
+            <Attribute>
+              <Annotations>
+                <Annotation>
+                  <Name>Format</Name>
+                  <Value>
+                    <Format Format="Text" xmlns="" />
+                  </Value>
+                </Annotation>
+              </Annotations>
+              <ID>CalculatedColumn1</ID>
+              <Name>Product Subcategory Name</Name>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Empty</DataType>
+                  <Source xsi:type="ddl200_200:ExpressionBinding">
+                    <Expression>RELATED('Product SubCategory'[Product Subcategory Name])</Expression>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <DataType>WChar</DataType>
+                <Source xsi:type="ddl200_200:ExpressionBinding">
+                  <Expression>RELATED('Product SubCategory'[Product Subcategory Name])</Expression>
+                </Source>
+              </NameColumn>
+              <OrderBy>Key</OrderBy>
+            </Attribute>
+            <Attribute>
+              <Annotations>
+                <Annotation>
+                  <Name>Format</Name>
+                  <Value>
+                    <Format Format="Text" xmlns="" />
+                  </Value>
+                </Annotation>
+              </Annotations>
+              <ID>CalculatedColumn1 1</ID>
+              <Name>Product Category Name</Name>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Empty</DataType>
+                  <Source xsi:type="ddl200_200:ExpressionBinding">
+                    <Expression>RELATED('Product Category'[Product Category Name])</Expression>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <DataType>WChar</DataType>
+                <Source xsi:type="ddl200_200:ExpressionBinding">
+                  <Expression>RELATED('Product Category'[Product Category Name])</Expression>
                 </Source>
               </NameColumn>
               <OrderBy>Key</OrderBy>
@@ -5379,6 +5443,11 @@
                   <OverrideBehavior>None</OverrideBehavior>
                   <Name>Ship Date</Name>
                 </AttributeRelationship>
+                <AttributeRelationship>
+                  <AttributeID>CalculatedColumn1</AttributeID>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>Margin</Name>
+                </AttributeRelationship>
               </AttributeRelationships>
               <OrderBy>Key</OrderBy>
               <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
@@ -6212,6 +6281,36 @@
               <OrderBy>Key</OrderBy>
               <ddl300_300:FormatString>General Date</ddl300_300:FormatString>
             </Attribute>
+            <Attribute>
+              <Annotations>
+                <Annotation>
+                  <Name>Format</Name>
+                  <Value>
+                    <Format Format="Currency" Accuracy="2" ThousandSeparator="True" xmlns="">
+                      <Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" />
+                    </Format>
+                  </Value>
+                </Annotation>
+              </Annotations>
+              <ID>CalculatedColumn1</ID>
+              <Name>Margin</Name>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Empty</DataType>
+                  <Source xsi:type="ddl200_200:ExpressionBinding">
+                    <Expression>[Sales Amount]-[Total Product Cost]</Expression>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <DataType>WChar</DataType>
+                <Source xsi:type="ddl200_200:ExpressionBinding">
+                  <Expression>[Sales Amount]-[Total Product Cost]</Expression>
+                </Source>
+              </NameColumn>
+              <OrderBy>Key</OrderBy>
+              <ddl300_300:FormatString>\$#,0.00;(\$#,0.00);\$#,0.00</ddl300_300:FormatString>
+            </Attribute>
           </Attributes>
           <ProactiveCaching>
             <SilenceInterval>-PT1S</SilenceInterval>
@@ -6933,6 +7032,16 @@
                   <OverrideBehavior>None</OverrideBehavior>
                   <Name>Fiscal Semester</Name>
                 </AttributeRelationship>
+                <AttributeRelationship>
+                  <AttributeID>CalculatedColumn1</AttributeID>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>CalculatedColumn1</Name>
+                </AttributeRelationship>
+                <AttributeRelationship>
+                  <AttributeID>CalculatedColumn1 1</AttributeID>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>CalculatedColumn1 1</Name>
+                </AttributeRelationship>
               </AttributeRelationships>
               <OrderBy>Key</OrderBy>
               <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
@@ -7437,6 +7546,60 @@
               </NameColumn>
               <OrderBy>Key</OrderBy>
             </Attribute>
+            <Attribute>
+              <Annotations>
+                <Annotation>
+                  <Name>Format</Name>
+                  <Value>
+                    <Format Format="Text" xmlns="" />
+                  </Value>
+                </Annotation>
+              </Annotations>
+              <ID>CalculatedColumn1</ID>
+              <Name>Month Calendar</Name>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Empty</DataType>
+                  <Source xsi:type="ddl200_200:ExpressionBinding">
+                    <Expression>RIGHT(" " &amp; FORMAT([Month], "#0"), 2) &amp; " - " &amp; [Month Name]</Expression>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <DataType>WChar</DataType>
+                <Source xsi:type="ddl200_200:ExpressionBinding">
+                  <Expression>RIGHT(" " &amp; FORMAT([Month], "#0"), 2) &amp; " - " &amp; [Month Name]</Expression>
+                </Source>
+              </NameColumn>
+              <OrderBy>Key</OrderBy>
+            </Attribute>
+            <Attribute>
+              <Annotations>
+                <Annotation>
+                  <Name>Format</Name>
+                  <Value>
+                    <Format Format="Text" xmlns="" />
+                  </Value>
+                </Annotation>
+              </Annotations>
+              <ID>CalculatedColumn1 1</ID>
+              <Name>Day of Week</Name>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Empty</DataType>
+                  <Source xsi:type="ddl200_200:ExpressionBinding">
+                    <Expression>RIGHT(" " &amp; FORMAT([Day Number of Week], "#0"), 2) &amp; " - " &amp; [Day Name]</Expression>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <DataType>WChar</DataType>
+                <Source xsi:type="ddl200_200:ExpressionBinding">
+                  <Expression>RIGHT(" " &amp; FORMAT([Day Number of Week], "#0"), 2) &amp; " - " &amp; [Day Name]</Expression>
+                </Source>
+              </NameColumn>
+              <OrderBy>Key</OrderBy>
+            </Attribute>
           </Attributes>
           <ProactiveCaching>
             <SilenceInterval>-PT1S</SilenceInterval>
@@ -7667,6 +7830,12 @@
                 <Attribute>
                   <AttributeID>Status</AttributeID>
                 </Attribute>
+                <Attribute>
+                  <AttributeID>CalculatedColumn1</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CalculatedColumn1 1</AttributeID>
+                </Attribute>
               </Attributes>
             </Dimension>
             <Dimension>
@@ -7790,6 +7959,9 @@
                 <Attribute>
                   <AttributeID>ShipDate</AttributeID>
                 </Attribute>
+                <Attribute>
+                  <AttributeID>CalculatedColumn1</AttributeID>
+                </Attribute>
               </Attributes>
             </Dimension>
             <Dimension>
@@ -7842,6 +8014,12 @@
                 </Attribute>
                 <Attribute>
                   <AttributeID>FiscalSemester</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CalculatedColumn1</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CalculatedColumn1 1</AttributeID>
                 </Attribute>
               </Attributes>
             </Dimension>
@@ -9833,6 +10011,28 @@
                         </KeyColumn>
                       </KeyColumns>
                     </Attribute>
+                    <Attribute>
+                      <AttributeID>CalculatedColumn1</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>Empty</DataType>
+                          <Source xsi:type="ddl200_200:ExpressionBinding">
+                            <Expression>RELATED('Product SubCategory'[Product Subcategory Name])</Expression>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>CalculatedColumn1 1</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>Empty</DataType>
+                          <Source xsi:type="ddl200_200:ExpressionBinding">
+                            <Expression>RELATED('Product Category'[Product Category Name])</Expression>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
                   </Attributes>
                   <ddl200_200:ShareDimensionStorage>Shared</ddl200_200:ShareDimensionStorage>
                 </Dimension>
@@ -11691,6 +11891,17 @@
                         </KeyColumn>
                       </KeyColumns>
                     </Attribute>
+                    <Attribute>
+                      <AttributeID>CalculatedColumn1</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>Empty</DataType>
+                          <Source xsi:type="ddl200_200:ExpressionBinding">
+                            <Expression>[Sales Amount]-[Total Product Cost]</Expression>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
                   </Attributes>
                   <ddl200_200:ShareDimensionStorage>Shared</ddl200_200:ShareDimensionStorage>
                 </Dimension>
@@ -12494,6 +12705,28 @@
                         </KeyColumn>
                       </KeyColumns>
                     </Attribute>
+                    <Attribute>
+                      <AttributeID>CalculatedColumn1</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>Empty</DataType>
+                          <Source xsi:type="ddl200_200:ExpressionBinding">
+                            <Expression>RELATED('Product SubCategory'[Product Subcategory Name])</Expression>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>CalculatedColumn1 1</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>Empty</DataType>
+                          <Source xsi:type="ddl200_200:ExpressionBinding">
+                            <Expression>RELATED('Product Category'[Product Category Name])</Expression>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
                   </Attributes>
                   <IntermediateCubeDimensionID>Internet Sales_fb7e06dc-bd9e-4495-89ce-c6040b73cd34</IntermediateCubeDimensionID>
                   <IntermediateGranularityAttributeID>ProductKey</IntermediateGranularityAttributeID>
@@ -13003,6 +13236,28 @@
                           <Source xsi:type="ColumnBinding">
                             <TableID>Date_e267a330-5c64-4dfd-bf13-9fbfbd982c45</TableID>
                             <ColumnID>FiscalSemester</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>CalculatedColumn1</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>Empty</DataType>
+                          <Source xsi:type="ddl200_200:ExpressionBinding">
+                            <Expression>RIGHT(" " &amp; FORMAT([Month], "#0"), 2) &amp; " - " &amp; [Month Name]</Expression>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>CalculatedColumn1 1</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>Empty</DataType>
+                          <Source xsi:type="ddl200_200:ExpressionBinding">
+                            <Expression>RIGHT(" " &amp; FORMAT([Day Number of Week], "#0"), 2) &amp; " - " &amp; [Day Name]</Expression>
                           </Source>
                         </KeyColumn>
                       </KeyColumns>
@@ -13767,6 +14022,28 @@
                           <Source xsi:type="ColumnBinding">
                             <TableID>Date_e267a330-5c64-4dfd-bf13-9fbfbd982c45</TableID>
                             <ColumnID>FiscalSemester</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>CalculatedColumn1</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>Empty</DataType>
+                          <Source xsi:type="ddl200_200:ExpressionBinding">
+                            <Expression>RIGHT(" " &amp; FORMAT([Month], "#0"), 2) &amp; " - " &amp; [Month Name]</Expression>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>CalculatedColumn1 1</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>Empty</DataType>
+                          <Source xsi:type="ddl200_200:ExpressionBinding">
+                            <Expression>RIGHT(" " &amp; FORMAT([Day Number of Week], "#0"), 2) &amp; " - " &amp; [Day Name]</Expression>
                           </Source>
                         </KeyColumn>
                       </KeyColumns>
