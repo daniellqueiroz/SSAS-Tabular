@@ -1610,7 +1610,7 @@
           </ProactiveCaching>
           <ddl300_300:Relationships>
             <ddl300_300:Relationship>
-              <ID>4fd24183-719c-4315-ab8c-5dbed282be34</ID>
+              <ID>dc165faf-e5a7-4ce5-9702-762ff35c5fc8</ID>
               <ddl300_300:FromRelationshipEnd>
                 <ddl300_300:Multiplicity>Many</ddl300_300:Multiplicity>
                 <ddl300:VisualizationProperties />
@@ -6254,7 +6254,7 @@
                 <AttributeRelationship>
                   <AttributeID>ProductKey</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
-                  <Name>Product Category Id</Name>
+                  <Name>Product Id</Name>
                 </AttributeRelationship>
                 <AttributeRelationship>
                   <AttributeID>CustomerKey</AttributeID>
@@ -6380,7 +6380,7 @@
                 </Annotation>
               </Annotations>
               <ID>ProductKey</ID>
-              <Name>Product Category Id</Name>
+              <Name>Product Id</Name>
               <KeyColumns>
                 <KeyColumn>
                   <NullProcessing>Preserve</NullProcessing>
@@ -7250,6 +7250,52 @@
                 <Attributes>
                   <Attribute>
                     <AttributeID>ProductKey</AttributeID>
+                  </Attribute>
+                </Attributes>
+              </ddl300_300:ToRelationshipEnd>
+            </ddl300_300:Relationship>
+            <ddl300_300:Relationship>
+              <ID>6948573a-06fd-4c44-a8be-4ce76454f3a5</ID>
+              <ddl300_300:FromRelationshipEnd>
+                <ddl300_300:Multiplicity>Many</ddl300_300:Multiplicity>
+                <ddl300:VisualizationProperties />
+                <DimensionID>Internet Sales_fb7e06dc-bd9e-4495-89ce-c6040b73cd34</DimensionID>
+                <Attributes>
+                  <Attribute>
+                    <AttributeID>OrderDate</AttributeID>
+                  </Attribute>
+                </Attributes>
+              </ddl300_300:FromRelationshipEnd>
+              <ddl300_300:ToRelationshipEnd>
+                <ddl300_300:Multiplicity>One</ddl300_300:Multiplicity>
+                <ddl300:VisualizationProperties />
+                <DimensionID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</DimensionID>
+                <Attributes>
+                  <Attribute>
+                    <AttributeID>FullDateAlternateKey</AttributeID>
+                  </Attribute>
+                </Attributes>
+              </ddl300_300:ToRelationshipEnd>
+            </ddl300_300:Relationship>
+            <ddl300_300:Relationship>
+              <ID>f46dee28-5f41-4002-9c21-41a5343bd2de</ID>
+              <ddl300_300:FromRelationshipEnd>
+                <ddl300_300:Multiplicity>Many</ddl300_300:Multiplicity>
+                <ddl300:VisualizationProperties />
+                <DimensionID>Internet Sales_fb7e06dc-bd9e-4495-89ce-c6040b73cd34</DimensionID>
+                <Attributes>
+                  <Attribute>
+                    <AttributeID>DueDate</AttributeID>
+                  </Attribute>
+                </Attributes>
+              </ddl300_300:FromRelationshipEnd>
+              <ddl300_300:ToRelationshipEnd>
+                <ddl300_300:Multiplicity>One</ddl300_300:Multiplicity>
+                <ddl300:VisualizationProperties />
+                <DimensionID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</DimensionID>
+                <Attributes>
+                  <Attribute>
+                    <AttributeID>FullDateAlternateKey</AttributeID>
                   </Attribute>
                 </Attributes>
               </ddl300_300:ToRelationshipEnd>
@@ -8217,7 +8263,7 @@
                   <IntermediateCubeDimensionID>Customer_e36a5386-9be7-412e-a2db-5c72170ff1ee</IntermediateCubeDimensionID>
                   <IntermediateGranularityAttributeID>GeographyKey</IntermediateGranularityAttributeID>
                   <Materialization>Regular</Materialization>
-                  <ddl300:RelationshipID>4fd24183-719c-4315-ab8c-5dbed282be34</ddl300:RelationshipID>
+                  <ddl300:RelationshipID>dc165faf-e5a7-4ce5-9702-762ff35c5fc8</ddl300:RelationshipID>
                 </Dimension>
               </Dimensions>
               <Partitions>
@@ -12576,145 +12622,6 @@
                   <ddl300:RelationshipID>9fcc9208-a370-4c12-9f1e-d46de5a1c587</ddl300:RelationshipID>
                 </Dimension>
                 <Dimension xsi:type="ReferenceMeasureGroupDimension">
-                  <CubeDimensionID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>RowNumber</AttributeID>
-                      <KeyColumns>
-                        <KeyColumn>
-                          <NullProcessing>Error</NullProcessing>
-                          <DataType>Integer</DataType>
-                          <DataSize>4</DataSize>
-                          <Source xsi:type="ddl200_200:RowNumberBinding" />
-                        </KeyColumn>
-                      </KeyColumns>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>GeographyKey</AttributeID>
-                      <KeyColumns>
-                        <KeyColumn>
-                          <NullProcessing>Error</NullProcessing>
-                          <DataType>BigInt</DataType>
-                          <DataSize>-1</DataSize>
-                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
-                          <Source xsi:type="ColumnBinding">
-                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
-                            <ColumnID>GeographyKey</ColumnID>
-                          </Source>
-                        </KeyColumn>
-                      </KeyColumns>
-                      <Type>Granularity</Type>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>City</AttributeID>
-                      <KeyColumns>
-                        <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
-                          <DataType>WChar</DataType>
-                          <DataSize>32768</DataSize>
-                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
-                          <Source xsi:type="ColumnBinding">
-                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
-                            <ColumnID>City</ColumnID>
-                          </Source>
-                        </KeyColumn>
-                      </KeyColumns>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>StateProvinceCode</AttributeID>
-                      <KeyColumns>
-                        <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
-                          <DataType>WChar</DataType>
-                          <DataSize>32768</DataSize>
-                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
-                          <Source xsi:type="ColumnBinding">
-                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
-                            <ColumnID>StateProvinceCode</ColumnID>
-                          </Source>
-                        </KeyColumn>
-                      </KeyColumns>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>StateProvinceName</AttributeID>
-                      <KeyColumns>
-                        <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
-                          <DataType>WChar</DataType>
-                          <DataSize>32768</DataSize>
-                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
-                          <Source xsi:type="ColumnBinding">
-                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
-                            <ColumnID>StateProvinceName</ColumnID>
-                          </Source>
-                        </KeyColumn>
-                      </KeyColumns>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>CountryRegionCode</AttributeID>
-                      <KeyColumns>
-                        <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
-                          <DataType>WChar</DataType>
-                          <DataSize>32768</DataSize>
-                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
-                          <Source xsi:type="ColumnBinding">
-                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
-                            <ColumnID>CountryRegionCode</ColumnID>
-                          </Source>
-                        </KeyColumn>
-                      </KeyColumns>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>EnglishCountryRegionName</AttributeID>
-                      <KeyColumns>
-                        <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
-                          <DataType>WChar</DataType>
-                          <DataSize>32768</DataSize>
-                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
-                          <Source xsi:type="ColumnBinding">
-                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
-                            <ColumnID>EnglishCountryRegionName</ColumnID>
-                          </Source>
-                        </KeyColumn>
-                      </KeyColumns>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>PostalCode</AttributeID>
-                      <KeyColumns>
-                        <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
-                          <DataType>WChar</DataType>
-                          <DataSize>32768</DataSize>
-                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
-                          <Source xsi:type="ColumnBinding">
-                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
-                            <ColumnID>PostalCode</ColumnID>
-                          </Source>
-                        </KeyColumn>
-                      </KeyColumns>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>SalesTerritoryKey</AttributeID>
-                      <KeyColumns>
-                        <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
-                          <DataType>BigInt</DataType>
-                          <DataSize>-1</DataSize>
-                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
-                          <Source xsi:type="ColumnBinding">
-                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
-                            <ColumnID>SalesTerritoryKey</ColumnID>
-                          </Source>
-                        </KeyColumn>
-                      </KeyColumns>
-                    </Attribute>
-                  </Attributes>
-                  <IntermediateCubeDimensionID>Customer_e36a5386-9be7-412e-a2db-5c72170ff1ee</IntermediateCubeDimensionID>
-                  <IntermediateGranularityAttributeID>GeographyKey</IntermediateGranularityAttributeID>
-                </Dimension>
-                <Dimension xsi:type="ReferenceMeasureGroupDimension">
                   <CubeDimensionID>Product_1197a9ca-99b5-4a2e-957e-d8b2b2414a69</CubeDimensionID>
                   <Attributes>
                     <Attribute>
@@ -13266,6 +13173,375 @@
                   </Attributes>
                   <IntermediateCubeDimensionID>Product SubCategory_cc62c76f-1f34-4231-86de-dd4dff2964c9</IntermediateCubeDimensionID>
                   <IntermediateGranularityAttributeID>ProductCategoryKey</IntermediateGranularityAttributeID>
+                </Dimension>
+                <Dimension xsi:type="ReferenceMeasureGroupDimension">
+                  <CubeDimensionID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>RowNumber</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Error</NullProcessing>
+                          <DataType>Integer</DataType>
+                          <DataSize>4</DataSize>
+                          <Source xsi:type="ddl200_200:RowNumberBinding" />
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>GeographyKey</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Error</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
+                            <ColumnID>GeographyKey</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                      <Type>Granularity</Type>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>City</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>WChar</DataType>
+                          <DataSize>32768</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
+                            <ColumnID>City</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>StateProvinceCode</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>WChar</DataType>
+                          <DataSize>32768</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
+                            <ColumnID>StateProvinceCode</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>StateProvinceName</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>WChar</DataType>
+                          <DataSize>32768</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
+                            <ColumnID>StateProvinceName</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>CountryRegionCode</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>WChar</DataType>
+                          <DataSize>32768</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
+                            <ColumnID>CountryRegionCode</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>EnglishCountryRegionName</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>WChar</DataType>
+                          <DataSize>32768</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
+                            <ColumnID>EnglishCountryRegionName</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>PostalCode</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>WChar</DataType>
+                          <DataSize>32768</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
+                            <ColumnID>PostalCode</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>SalesTerritoryKey</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Geography_e3ca73c0-5275-4e70-ab2c-cb51ea5f14f9</TableID>
+                            <ColumnID>SalesTerritoryKey</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                  </Attributes>
+                  <IntermediateCubeDimensionID>Customer_e36a5386-9be7-412e-a2db-5c72170ff1ee</IntermediateCubeDimensionID>
+                  <IntermediateGranularityAttributeID>GeographyKey</IntermediateGranularityAttributeID>
+                </Dimension>
+                <Dimension xsi:type="ReferenceMeasureGroupDimension">
+                  <CubeDimensionID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>RowNumber</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Error</NullProcessing>
+                          <DataType>Integer</DataType>
+                          <DataSize>4</DataSize>
+                          <Source xsi:type="ddl200_200:RowNumberBinding" />
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>DayNumberOfWeek</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>DayNumberOfWeek</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>EnglishDayNameOfWeek</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>WChar</DataType>
+                          <DataSize>32768</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>EnglishDayNameOfWeek</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>DayNumberOfMonth</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>DayNumberOfMonth</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>DayNumberOfYear</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>DayNumberOfYear</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>WeekNumberOfYear</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>WeekNumberOfYear</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>EnglishMonthName</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>WChar</DataType>
+                          <DataSize>32768</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>EnglishMonthName</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>MonthNumberOfYear</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>MonthNumberOfYear</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>CalendarQuarter</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>CalendarQuarter</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>CalendarYear</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>CalendarYear</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>CalendarSemester</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>CalendarSemester</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>FiscalQuarter</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>FiscalQuarter</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>FiscalYear</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>FiscalYear</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>FiscalSemester</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <DataSize>-1</DataSize>
+                          <InvalidXmlCharacters>Remove</InvalidXmlCharacters>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>FiscalSemester</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>FullDateAlternateKey</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Error</NullProcessing>
+                          <DataType>Date</DataType>
+                          <DataSize>-1</DataSize>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Date_1aa56267-b10f-4ca0-8d13-ee177c9893af</TableID>
+                            <ColumnID>FullDateAlternateKey</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                      <Type>Granularity</Type>
+                    </Attribute>
+                  </Attributes>
+                  <IntermediateCubeDimensionID>Internet Sales_fb7e06dc-bd9e-4495-89ce-c6040b73cd34</IntermediateCubeDimensionID>
+                  <IntermediateGranularityAttributeID>OrderDate</IntermediateGranularityAttributeID>
+                  <Materialization>Regular</Materialization>
+                  <ddl300:RelationshipID>6948573a-06fd-4c44-a8be-4ce76454f3a5</ddl300:RelationshipID>
                 </Dimension>
               </Dimensions>
               <Partitions>
