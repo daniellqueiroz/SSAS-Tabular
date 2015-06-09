@@ -16409,10 +16409,6 @@ CREATE KPI CURRENTCUBE.[nternet Current Quarter Margin Performance] AS Measures.
               <Name>danielqueiroz</Name>
               <Sid>S-1-5-21-2486091345-3505458334-3953710805-1001</Sid>
             </Member>
-            <Member>
-              <Name>SPFarm</Name>
-              <Sid>S-1-5-21-2486091345-3505458334-3953710805-1005</Sid>
-            </Member>
           </Members>
         </Role>
         <Role>
@@ -16421,8 +16417,8 @@ CREATE KPI CURRENTCUBE.[nternet Current Quarter Margin Performance] AS Measures.
           <Description>This role can include users in your organization for which you want only to be able to browse data related to sales in the US (United States).</Description>
           <Members>
             <Member>
-              <Name>SPFarm</Name>
-              <Sid>S-1-5-21-2486091345-3505458334-3953710805-1005</Sid>
+              <Name>danielqueiroz</Name>
+              <Sid>S-1-5-21-2486091345-3505458334-3953710805-1001</Sid>
             </Member>
           </Members>
         </Role>
@@ -16432,8 +16428,8 @@ CREATE KPI CURRENTCUBE.[nternet Current Quarter Margin Performance] AS Measures.
           <Description>This role can include users for which you want to have Administrator permission, which allows unlimited access and permissions to perform administrative tasks on the model database.</Description>
           <Members>
             <Member>
-              <Name>Administrator</Name>
-              <Sid>S-1-5-21-2486091345-3505458334-3953710805-500</Sid>
+              <Name>danielqueiroz</Name>
+              <Sid>S-1-5-21-2486091345-3505458334-3953710805-1001</Sid>
             </Member>
           </Members>
         </Role>
