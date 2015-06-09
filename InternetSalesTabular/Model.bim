@@ -1885,6 +1885,15 @@
             <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
           </ErrorConfiguration>
           <StorageMode valuens="ddl200_200">InMemory</StorageMode>
+          <DimensionPermissions>
+            <DimensionPermission>
+              <ID>DimensionPermission</ID>
+              <Name>DimensionPermission</Name>
+              <RoleID>Role2</RoleID>
+              <Read>Allowed</Read>
+              <ddl300_300:AllowedRowsExpression>Geography[Country Region Code] = " US"</ddl300_300:AllowedRowsExpression>
+            </DimensionPermission>
+          </DimensionPermissions>
           <Language>1033</Language>
           <UnknownMemberName>Unknown</UnknownMemberName>
           <Attributes>
@@ -8153,6 +8162,28 @@
               </Hierarchies>
             </Dimension>
           </Dimensions>
+          <CubePermissions>
+            <CubePermission>
+              <ID>CubePermission</ID>
+              <Name>CubePermission</Name>
+              <RoleID>Role</RoleID>
+              <Read>Allowed</Read>
+              <ReadSourceData>None</ReadSourceData>
+            </CubePermission>
+            <CubePermission>
+              <ID>CubePermission 1</ID>
+              <Name>CubePermission 1</Name>
+              <RoleID>Role2</RoleID>
+              <Read>Allowed</Read>
+              <ReadSourceData>None</ReadSourceData>
+            </CubePermission>
+            <CubePermission>
+              <ID>CubePermission 2</ID>
+              <Name>CubePermission 2</Name>
+              <RoleID>Role3</RoleID>
+              <ReadSourceData>None</ReadSourceData>
+            </CubePermission>
+          </CubePermissions>
           <Perspectives>
             <Perspective>
               <ID>Internet Sales</ID>
@@ -16368,6 +16399,66 @@ CREATE KPI CURRENTCUBE.[nternet Current Quarter Margin Performance] AS Measures.
           </Schema>
         </DataSourceView>
       </DataSourceViews>
+      <Roles>
+        <Role>
+          <ID>Role</ID>
+          <Name>Internet Sales Manager</Name>
+          <Description>This role can include users in your organization for which you want to have Read permission to all model objects and data.</Description>
+          <Members>
+            <Member>
+              <Name>danielqueiroz</Name>
+              <Sid>S-1-5-21-2486091345-3505458334-3953710805-1001</Sid>
+            </Member>
+            <Member>
+              <Name>SPFarm</Name>
+              <Sid>S-1-5-21-2486091345-3505458334-3953710805-1005</Sid>
+            </Member>
+          </Members>
+        </Role>
+        <Role>
+          <ID>Role2</ID>
+          <Name>Internet Sales US</Name>
+          <Description>This role can include users in your organization for which you want only to be able to browse data related to sales in the US (United States).</Description>
+          <Members>
+            <Member>
+              <Name>SPFarm</Name>
+              <Sid>S-1-5-21-2486091345-3505458334-3953710805-1005</Sid>
+            </Member>
+          </Members>
+        </Role>
+        <Role>
+          <ID>Role3</ID>
+          <Name>Internet Sales Administrator</Name>
+          <Description>This role can include users for which you want to have Administrator permission, which allows unlimited access and permissions to perform administrative tasks on the model database.</Description>
+          <Members>
+            <Member>
+              <Name>Administrator</Name>
+              <Sid>S-1-5-21-2486091345-3505458334-3953710805-500</Sid>
+            </Member>
+          </Members>
+        </Role>
+      </Roles>
+      <DatabasePermissions>
+        <DatabasePermission>
+          <ID>DatabasePermission</ID>
+          <Name>DatabasePermission</Name>
+          <RoleID>Role</RoleID>
+          <Read>Allowed</Read>
+        </DatabasePermission>
+        <DatabasePermission>
+          <ID>DatabasePermission 1</ID>
+          <Name>DatabasePermission 1</Name>
+          <RoleID>Role2</RoleID>
+          <Read>Allowed</Read>
+        </DatabasePermission>
+        <DatabasePermission>
+          <ID>DatabasePermission 2</ID>
+          <Name>DatabasePermission 2</Name>
+          <RoleID>Role3</RoleID>
+          <ReadDefinition>Allowed</ReadDefinition>
+          <Administer>true</Administer>
+        </DatabasePermission>
+      </DatabasePermissions>
     </Database>
   </ObjectDefinition>
 </Alter>
